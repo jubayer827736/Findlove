@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LocalMeet - Meet Tonight</title>
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0a;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+              url('https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+  text-align: center;
+  padding: 120px 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.hero p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.hero .tag {
+  background: #ff4d4d;
+  color: white;
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 0 20px rgba(255,77,77,0.6);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {box-shadow: 0 0 10px rgba(255,77,77,0.4);}
+  50% {box-shadow: 0 0 25px rgba(255,77,77,0.9);}
+  100% {box-shadow: 0 0 10px rgba(255,77,77,0.4);}
+}
+
+.hero button {
+  margin: 10px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #ff4d4d, #ff9966);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.hero button:hover {
+  transform: scale(1.1);
+}
+
+/* People Section */
+.people {
+  text-align: center;
+  padding: 50px 10px;
+  background-color: #121212;
+}
+.people h2 {
+  margin-bottom: 30px;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 200px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+  transition: 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.card h3 {
+  margin: 10px 0 5px;
+}
+.card p {
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* CTA Section */
+.cta {
+  background: white;
+  color: #111;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 40px 40px 0 0;
+}
+.cta h3 {
+  margin-bottom: 15px;
+}
+.cta button {
+  background: linear-gradient(90deg, #ff4d4d, #ff9966);
+  border: none;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(255,77,77,0.5);
+  transition: 0.3s;
+}
+.cta button:hover {
+  transform: scale(1.1);
+}
+</style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="tag">❤️ LocalMeet</div>
+  <h1>Your World. Your Match. Meet Tonight.</h1>
+  <p>Fast sign-up. Real profiles. Chat instantly with local people — no credit card required.</p>
+  <div>
+    <button>Male</button>
+    <button>Female</button>
+    <button>Age 18+</button>
+  </div>
+</section>
+
+<!-- People Section -->
+<section class="people">
+  <h2>5342 People online right now </h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maya">
+      <h3>Maya🟢  26</h3>
+      <p>Los Angeles, CA</p>
+    </div>
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="Chris">
+      <h3>Chris🟢  30</h3>
+      <p>New York, NY</p>
+    </div>
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sofia">
+      <h3>Sofia🟢  25</h3>
+      <p>Miami, FL</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+  <h3>Ready to meet someone tonight?</h3>
+  <p>Tap the button below to open the chat signup — it’s totally free.</p>
+  <a href="https://ddebcdd.posttoffer.com/c/cd2a02d85055b?sub1=ads">
+    <button>Join Free Today</button>
+  </a>
+</section>
+
+</body>
+</html>
